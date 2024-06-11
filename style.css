@@ -230,17 +230,12 @@
 }
 
 .img .imgphone {
-
-
     position: absolute;
     top: 28%;
     right: 15%;
     height: 435px;
     z-index: 1;
     width: 235px;
-
-
-
 }
 
 .img .imggym {
