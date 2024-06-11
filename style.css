@@ -105,8 +105,8 @@
 }
 
 /*-------------------------------------------------- Animation-scroll------------------------------------ */
- 
-.scroll h1 {
+
+/* .scroll h1 {
     animation: cssscrollreveal ease-out both;
     animation-timeline: view();
     animation-range: entry 0% cover 100%;
@@ -191,13 +191,14 @@
         opacity: 1;
         transform: translateY(0);
     }
-}
+} */
 
 /*-------------------------------------------------- / / HOME / /-------------------------------------------------- */
 
 
 .home {
     background: linear-gradient(#4294E3, #8F12FD);
+    width: 100%;
 }
 
 .coverdiv {
@@ -207,18 +208,21 @@
 
 .cover {
     width: 70%;
-    padding: 50px;
+    padding: 5% 10% 0 5%;
+    display: flex;
     text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
 }
 
 .home h2 {
     color: white;
     font-size: 50px;
-
 }
 
 .home p {
-    padding: 1rem;
     color: white;
 }
 
@@ -232,7 +236,7 @@
 .img .imgphone {
     position: absolute;
     top: 28%;
-    right: 15%;
+    right: 10%;
     height: 435px;
     z-index: 1;
     width: 235px;
@@ -241,9 +245,9 @@
 .img .imggym {
     position: absolute;
     top: 30%;
-    right: 16%;
+    right: 11%;
     height: 421px;
-    width: 208px;
+    width: 211px;
     z-index: 1;
 }
 
@@ -522,7 +526,7 @@ button {
     transform: translateY(-5px);
 }
 
-.icon1 {
+.icon1  i {
     background: linear-gradient(to bottom right, var(--primary), var(--secondary));
     background-clip: content-box;
     -webkit-background-clip: text;
@@ -531,7 +535,7 @@ button {
 
 }
 
-.icon2 {
+.icon2 i {
     background: linear-gradient(to bottom right, var(--primary), var(--secondary));
     background-clip: content-box;
     -webkit-background-clip: text;
@@ -540,7 +544,7 @@ button {
 
 }
 
-.icon3 {
+.icon3 i {
     background: linear-gradient(to bottom right, var(--primary), var(--secondary));
     background-clip: content-box;
     -webkit-background-clip: text;
@@ -549,7 +553,7 @@ button {
 
 }
 
-.icon5 {
+.icon5 i {
     background: linear-gradient(to bottom right, var(--primary), var(--secondary));
     background-clip: content-box;
     -webkit-background-clip: text;
@@ -558,7 +562,7 @@ button {
 
 }
 
-.icon6 {
+.icon6 i {
     background: linear-gradient(to bottom right, var(--primary), var(--secondary));
     background-clip: content-box;
     -webkit-background-clip: text;
@@ -567,7 +571,7 @@ button {
 
 }
 
-.ico7 {
+.ico7 i {
     background: linear-gradient(to bottom right, var(--primary), var(--secondary));
     background-clip: content-box;
     -webkit-background-clip: text;
@@ -1284,14 +1288,16 @@ nav {
     #navbar {
         display: none;
     }
-    .home .img{
+
+    .home .img {
         display: none;
     }
 
-    .cover{
-       width: auto;    
-           display: flex;  
-                 flex-direction: column;
+
+    .cover {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
 
 
@@ -1320,7 +1326,7 @@ nav {
         margin: 0;
     }
 
-   
+
     .text1 input {
         width: 300px;
     }
@@ -1342,9 +1348,9 @@ nav {
 
 
 @media screen and (max-width:570px) {
-    /* .home {
-        height: 200vh;
-    } */
+    .home h2 {
+        font-size: 30px;
+    }
 
 
     .aboutdiv1 {
@@ -1403,7 +1409,7 @@ nav {
         text-align: center;
     }
 
-   
+
     .div4 {
         display: none;
     }
