@@ -3,11 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Jost", sans-serif;
-
-
-
-
-    /* outline: 10px solid black; */
 }
 
 .button {
@@ -104,117 +99,36 @@
 
 }
 
-/*-------------------------------------------------- Animation-scroll------------------------------------ */
 
-/* .scroll h1 {
-    animation: cssscrollreveal ease-out both;
-    animation-timeline: view();
-    animation-range: entry 0% cover 100%;
-}
-
-.scroll h5 {
-    animation: cssscrollreveal ease-out both;
-    animation-timeline: view();
-    animation-range: entry 0% cover 100%;
-}
-
-.scroll p {
-    animation: cssscrollreveal ease-out both;
-    animation-timeline: view();
-    animation-range: entry 0% cover 100%;
-}
-
-.scroll .symbol {
-    animation: cssscrollreveal ease-out both;
-    animation-timeline: view();
-    animation-range: entry 0% cover 100%;
-}
-
-.scroll button {
-
-    animation: cssscrollreveal ease-out both;
-    animation-timeline: view();
-    animation-range: entry 0% cover 100%;
-}
-
-.scroll h3 {
-    animation: cssscrollreveal ease-out both;
-    animation-timeline: view();
-    animation-range: entry 0% cover 100%;
-}
-
-.scroll .box {
-    animation: cssscrollreveal ease-out both;
-    animation-timeline: view();
-    animation-range: entry 0% cover 100%;
-}
-
-.scroll .boxes {
-    animation: cssscrollreveal ease-out both;
-    animation-timeline: view();
-    animation-range: entry 0% cover 100%;
-}
-
-.scroll h4 {
-    animation: cssscrollreveal ease-out both;
-    animation-timeline: view();
-    animation-range: entry 0% cover 100%;
-}
-
-.scroll h6 {
-    animation: cssscrollreveal ease-out both;
-    animation-timeline: view();
-    animation-range: entry 0% cover 100%;
-}
-
-.scroll .gift {
-    animation: cssscrollreveal ease-out both;
-    animation-timeline: view();
-    animation-range: entry 0% cover 100%;
-}
-
-.scroll i {
-    animation: cssscrollreveal ease-out both;
-    animation-timeline: view();
-    animation-range: entry 0% cover 100%;
-}
-
-
-
-@keyframes cssscrollreveal {
-    from {
-        opacity: 0;
-        transform: translateY(100px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-} */
 
 /*-------------------------------------------------- / / HOME / /-------------------------------------------------- */
 
 
 .home {
+    position: relative;
+}
+
+.homediv1 {
     background: linear-gradient(#4294E3, #8F12FD);
-    width: 100%;
+    width: 100%
 }
 
 .coverdiv {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .cover {
     width: 70%;
-    padding: 5% 10% 0 5%;
-    display: flex;
+    padding: 50px;
     text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
+    position: relative;
+    top: 50px;
+
+
 }
 
 .home h2 {
@@ -228,27 +142,32 @@
 
 
 
-.home img {
-    position: relative;
+.img {
+    position: absolute;
+    top: 17%;
+    right: 10%;
 
 }
 
+
+
 .img .imgphone {
-    position: absolute;
-    top: 28%;
-    right: 10%;
-    height: 435px;
-    z-index: 1;
-    width: 235px;
+
+    width: 207px;
+    float: right;
+    /* z-index: -1; */
+    height: 368px;
+
 }
 
 .img .imggym {
+
     position: absolute;
-    top: 30%;
-    right: 11%;
-    height: 421px;
-    width: 211px;
-    z-index: 1;
+    right: 17px;
+    height: 341px;
+    bottom: 13px;
+    width: 176px;
+    border-radius: 10px;
 }
 
 
@@ -284,7 +203,6 @@ img.bottomimg {
 .About {
     padding: 25px;
     display: flex;
-    flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -322,7 +240,8 @@ img.bottomimg {
 
 .symbol {
     display: flex;
-    gap: 95px;
+    gap: 5%;
+
 }
 
 .symbol p {
@@ -401,9 +320,7 @@ button {
     transition: 0.4s ease-in-out;
 }
 
-.box:hover {
-    box-shadow: #919294;
-}
+
 
 .boxes {
     display: flex;
@@ -433,8 +350,14 @@ button {
 
 .box1:hover {
     transform: translateY(-5px);
+    background-color: #06bb;
+    color: white;
 }
 
+.icon1:hover {
+    transform: translateY(-5px);
+    color: white;
+}
 
 .box2 {
 
@@ -451,6 +374,8 @@ button {
 }
 
 .box2:hover {
+    background-color: #06bb;
+    color: white;
     transform: translateY(-5px);
 }
 
@@ -469,6 +394,8 @@ button {
 }
 
 .box3:hover {
+    background-color: #06bb;
+    color: white;
     transform: translateY(-5px);
 }
 
@@ -488,6 +415,8 @@ button {
 }
 
 .box4:hover {
+    background-color: #06bb;
+    color: white;
     transform: translateY(-5px);
 }
 
@@ -506,6 +435,8 @@ button {
 }
 
 .box5:hover {
+    background-color: #06bb;
+    color: white;
     transform: translateY(-5px);
 }
 
@@ -523,10 +454,13 @@ button {
 }
 
 .box6:hover {
+    background-color: #06bb;
+    color: white;
     transform: translateY(-5px);
+
 }
 
-.icon1  i {
+.icon1 i {
     background: linear-gradient(to bottom right, var(--primary), var(--secondary));
     background-clip: content-box;
     -webkit-background-clip: text;
@@ -658,7 +592,7 @@ button {
 
 
 .easy h4 {
-    /* text-align: center; */
+
     background: linear-gradient(to bottom right, var(--primary), var(--secondary));
     background-clip: content-box;
     -webkit-background-clip: text;
@@ -696,7 +630,7 @@ button {
     padding: 1.5rem;
     line-height: 1rem;
     text-align: center;
-    color: #919294;
+    color: #131414e0;
     background: #F0F6FF;
     transition: transform 0.3 ease;
 }
@@ -712,7 +646,7 @@ button {
     padding: 1.5rem;
     line-height: 1rem;
     text-align: center;
-    color: #919294;
+    color: #131414e0;
     background: #F0F6FF;
     transition: transform 0.3 ease;
 }
@@ -730,7 +664,7 @@ button {
     padding: 1.5rem;
     line-height: 1rem;
     text-align: center;
-    color: #919294;
+    color: #131414e0;
     background: #F0F6FF;
     transition: transform 0.3 ease;
 }
@@ -743,8 +677,6 @@ button {
 .page4 {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row-reverse;
-    gap: 150px;
     justify-content: center;
     align-items: center;
 }
@@ -1004,6 +936,39 @@ input:checked+.slider:before {
     background: #F0F6FF;
 }
 
+.square4 {
+    border-radius: 10px;
+    height: 400px;
+    width: 350px;
+    padding: 1.5rem;
+    line-height: 1rem;
+    color: #919294;
+    background: #d8e0eb;
+}
+
+
+
+.square5 {
+    border-radius: 10px;
+    height: 400px;
+    width: 350px;
+    padding: 1.5rem;
+    line-height: 1rem;
+    color: #919294;
+    background: #d8e0eb;
+
+}
+
+.square6 {
+    border-radius: 10px;
+    height: 400px;
+    width: 350px;
+    padding: 1.5rem;
+    line-height: 1rem;
+    color: #919294;
+    background: #d8e0eb;
+}
+
 .square1 .square2 .square3 .btn {
     display: flex;
     justify-content: center;
@@ -1120,32 +1085,40 @@ input:checked+.slider:before {
     margin: 2% 10% 5% 10%;
 }
 
-
-
-.text {
-    display: contents;
+.whole-input {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
 }
 
-.text input {
-    border-radius: 10px;
-    height: 70px;
-    width: 300px;
-    padding: 10px;
+.input-container-1 {
+    display: flex;
+    gap: 1rem;
 }
 
-.text1 input {
+input.input-box-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 88px;
+    border: 2px solid #ccc;
+    font-size: 16px;
     border-radius: 10px;
-    height: 70px;
-    width: 600px;
-    padding: 10px;
+    padding: 10px 20px;
+
 
 }
 
-.text2 input {
+.input-box {
+    display: flex;
+
+    width: 305px;
+    height: 87px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #ccc;
     border-radius: 10px;
-    height: 140px;
-    width: 600px;
-    padding: 10px;
+    transition: border-color 0.3s;
 }
 
 .Contact button {
@@ -1184,12 +1157,14 @@ input:checked+.slider:before {
     justify-content: center;
     padding: 25px;
     gap: 8%;
+    margin: 10%;
 
 }
 
-.div4 {
-    width: 26%;
+.footer h1 {
+    text-decoration: underline;
 }
+
 
 .img2 .topimg {
     display: flex;
@@ -1289,10 +1264,9 @@ nav {
         display: none;
     }
 
-    .home .img {
-        display: none;
+    .coverdiv {
+        justify-content: center;
     }
-
 
     .cover {
         display: flex;
@@ -1318,30 +1292,35 @@ nav {
         font-size: 33px;
     }
 
-    #input-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-    }
 
-
-    .text1 input {
-        width: 300px;
-    }
-
-    .text2 input {
-        width: 300px;
-    }
 
     .footer {
         width: 80%;
         flex-wrap: wrap;
     }
 
-    .div4 {
-        width: 33%;
+
+
+    .Ending {
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width:770px) {
+    .home .img {
+        display: none;
+    }
+
+    .input-container-1 {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .download {
+
+        width: 65%;
     }
 
 }
@@ -1352,6 +1331,22 @@ nav {
         font-size: 30px;
     }
 
+
+    .div1 {
+        text-align: center;
+    }
+
+    .div2 {
+        text-align: center;
+    }
+
+    .div3 {
+        text-align: center;
+    }
+
+    .div4 {
+        text-align: center;
+    }
 
     .aboutdiv1 {
         width: 100%;
@@ -1386,11 +1381,6 @@ nav {
         align-items: center;
         width: 70%;
     }
-
-    .Ending {
-        height: 1200px;
-    }
-
 
 }
 
