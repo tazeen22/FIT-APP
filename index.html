@@ -231,7 +231,7 @@
 
         <!------------------------------------------------------- PRICING PLAN ---------------------------------------------------------->
 
-
+<div class="whole-price">
 
         <div class="pricing-toggle">
             <label class="toggle-switch">
@@ -246,6 +246,7 @@
                 <div class="square1">
                     <h4>Starter Plan</h4>
                     <small>Powerful & Awesome Features</small>
+                    <hr>
                     <h2>$14.99/Month</h2>
                     <div class="tick">
                         <p> HTML5 & CSS3&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-check" style="color: #74C0FC;"></i></p>
@@ -267,6 +268,7 @@
                 <div class="square2">
                     <h4>Advance Plan</h4>
                     <small>Powerful & Awesome Features</small>
+                    <hr>
                     <h2>$24.99/Month</h2>
                     <div class="tick">
                         <p> HTML5 & CSS3&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-check" style="color: #74C0FC;"></i></p>
@@ -287,6 +289,7 @@
                 <div class="square3">
                     <h4>Premium Plan</h4>
                     <small>Powerful & Awesome Features</small>
+                    <hr>
                     <h2>$34.99/Month</h2>
                     <div class="tick">
                         <p> HTML5 & CSS3&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-check" style="color: #74C0FC;"></i></p>
@@ -312,6 +315,7 @@
                 <div class="square4">
                     <h4>Starter Plan</h4>
                     <small>Powerful & Awesome Features</small>
+                    <hr>
                     <h2>$24.99/yearly</h2>
                     <div class="tick">
                         <p> HTML5 & CSS3&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-check" style="color: #74C0FC;"></i></p>
@@ -333,6 +337,7 @@
                 <div class="square5">
                     <h4>Advance Plan</h4>
                     <small>Powerful & Awesome Features</small>
+                    <hr>
                     <h2>$34.99/yearly</h2>
                     <div class="tick">
                         <p> HTML5 & CSS3&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-check" style="color: #74C0FC;"></i></p>
@@ -354,6 +359,7 @@
                 <div class="square6">
                     <h4>Premium Plan</h4>
                     <small>Powerful & Awesome Features</small>
+                    <hr>
                     <h2>$44.99/yearly</h2>
                     <p> HTML5 & CSS3&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-check" style="color: #74C0FC;"></i></p><br>
                     <p> Bootstrap v5&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-check" style="color: #74C0FC;"></i></p><br>
@@ -377,16 +383,20 @@
                 yearly.classList.toggle('active');
             });
         </script>
+</div>
         <!--------------------------------------------------------- Testimonial ----------------------------------------------------------->
         <div class="testimonial">
-            <h4>Testimonial</h4>
-            <h1> What Say Our Clients!</h1>
+            <div class="testhead">
+                <h4>Testimonial</h4>
+                <h1> What Say Our Clients!</h1>
+            </div>
             <div class="test">
-                <div class="test1">
-                    <div>
+                <div class="testcover1">
+                    <div class="name">
                         <h5>Client Name</h5>
+                        <h6>Jenifer</h6>
                     </div>
-                    <h6>Jenifer</h6>
+
                     <div class="testimg"><img src="./images/testimonial-1.jpg">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -394,17 +404,18 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <div>
+
+                    <div class="para">
                         <p>Lorem, ipsum dolor sit consectetur adipisicing Lorem ipsum dolor am consectetur elit Vero.
                         </p>
                     </div>
                 </div>
 
                 <div class="test2">
-                    <div>
+                    <div class="name">
                         <h5>Client Name</h5>
+                        <h6>Charlie</h6>
                     </div>
-                    <h6>Charlie</h6>
 
                     <div class="testimg"><img src="./images/testimonial-2.jpg">
                         <i class="fa-solid fa-star"></i>
@@ -413,37 +424,39 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <div>
-                        <p>Lorem, ipsum dolor sit consectetur adipisicing Lorem ipsum dolor am consectetur elit Vero.</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <!--------------------------------------------------------------- Contact ------------------------------------------------------->
-            <div class="Contact">
-                <h4>Contact Us</h4>
-                <h6>Get In Touch!</h6>
-                <p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet. adipisicing elit citationem fugit totam ipsam
-                    nam
-                    totam ipsam nam impedit provident, rerum quisquam! Iure, impedit dolorem.
-                </p>
-                <div class="whole-input">
-                    <div class="input-container-1">
-                        <input type="text" class="input-box" placeholder="Your Name">
-                        <input type="text" class="input-box" placeholder="Your E-mail">
-                    </div>
-                    <br>
-                    <div class="input-container-2">
-                        <input type="text" class="input-box-2" placeholder="Subject">
-                        <br>
-                        <input type="text" class="input-box-2" placeholder="Message">
+                    <div class="para">
+                        <p>Lorem, ipsum dolor sit consectetur adipisicing Lorem ipsum dolor am consectetur elit Vero.
+                        </p>
                     </div>
                 </div>
-                <button>Send Message</button>
-            </div>
 
+            </div>
         </div>
+
+        <!--------------------------------------------------------------- Contact ------------------------------------------------------->
+        <div class="Contact">
+            <h4>Contact Us</h4>
+            <h6>Get In Touch!</h6>
+            <p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet. adipisicing elit citationem fugit totam ipsam
+                nam
+                totam ipsam nam impedit provident, rerum quisquam! Iure, impedit dolorem.
+            </p>
+            <div class="whole-input">
+                <div class="input-container-1">
+                    <input type="text" class="input-box" placeholder="Your Name">
+                    <input type="text" class="input-box" placeholder="Your E-mail">
+                </div>
+                <br>
+                <div class="input-container-2">
+                    <input type="text" class="input-box-2" placeholder="Subject">
+                    <br>
+                    <input type="text" class="input-box-2" placeholder="Message">
+                </div>
+            </div>
+            <button>Send Message</button>
+        </div>
+
+    </div>
     </div>
     <!---------------------------------------------------------- End --------------------------------------------------------->
     <div class="Ending">
