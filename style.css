@@ -31,6 +31,71 @@
 
 }
 
+
+/* Styling for the hamburger icon */
+.nav-toggle-label {
+    cursor: pointer;
+    padding: 10px;
+    display: none;
+    position: relative;
+    left: 50%;
+}
+
+.nav-toggle-label span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #464040;
+    margin: 5px 0;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+#nav-toggle{
+    display: none;
+}
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .nav-toggle-label {
+        display: block; 
+        width: 100px;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        width: 100%;
+        background-color: #ffffff96;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.3s ease-in-out;
+        z-index: 1000;
+    }
+
+    #nav-toggle:checked + .nav-toggle-label + ul {
+        transform: scaleY(1); 
+    }
+
+    .item {
+        margin: 10px 0;
+    }
+
+    .item a {
+        padding: 10px 20px;
+    }
+
+    .btn {
+        display: none; 
+    }
+}
+
+
 .logo h1 {
     background: linear-gradient(to bottom right, var(--primary), var(--secondary));
     background-clip: content-box;
@@ -1267,9 +1332,7 @@ nav {
         }
 
 @media screen and (max-width:950px) {
-    #navbar {
-        display: none;
-    }
+  
 
 .screenimg img{
     display: none;
