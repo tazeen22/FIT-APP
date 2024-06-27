@@ -7,7 +7,7 @@
     
 }
 
-.button {
+/* .button {
     width: 250px;
     height: 90px;
     border: none;
@@ -23,8 +23,8 @@
 
 .button i {
     margin-right: 10px;
-    font-size: 30px;
-}
+    font-size: 10px;
+} */
 
 .logo {
     margin-left: 40px;
@@ -35,7 +35,7 @@
 /* Styling for the hamburger icon */
 .nav-toggle-label {
     cursor: pointer;
-    padding: 10px;
+    /* padding: 10px; */
     display: none;
     position: relative;
     left: 50%;
@@ -155,7 +155,7 @@
     font-size: 20px;
 }
 
-.btn {
+.heading .btn {
     border-radius: 20px;
     border: none;
     background: linear-gradient(to bottom right, var(--primary), var(--secondary));
@@ -164,6 +164,7 @@
     height: 40px;
     cursor: pointer;
     margin: 20px;
+    font-size: 10px;
 
 }
 
@@ -244,25 +245,27 @@ img.bottomimg {
     width: 100%;
 }
 
-.imggym {
-    animation: mymove 1s 1;
-    animation-delay: -0.5s;
-}
 
-.imgphone {
-    animation: mymove 1s 1;
-    animation-delay: -0.5s;
-}
 
-@keyframes mymove {
+
+@keyframes slideIn {
     from {
-        top: 0px;
+        transform: translateX(100%);
+        opacity: 0;
     }
-
     to {
-        bottom: 5px;
+        transform: translateX(0);
+        opacity: 1;
     }
 }
+
+
+
+
+.slide-in {
+    animation: slideIn 2s ease-in-out;
+}
+
  .home button.btn {
     font-size: 12px;
 }
@@ -614,7 +617,7 @@ button {
     border: none;
     padding: 12px 24px;
     border-radius: 6px;
-    font-size: 16px;
+    font-size: 10px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -780,7 +783,7 @@ button {
     border: none;
     padding: 12px 24px;
     border-radius: 6px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -793,6 +796,7 @@ button {
 
 .button i {
     margin-right: 10px;
+    font-size: 18px;
 }
 
 .button.apple {
