@@ -1,0 +1,12 @@
+.heading {
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+    /* height: auto; */
+    z-index: 1;
+    display: flex;
+    background: rgb(85 85 85 / 70%);
+    justify-content: space-between;
+ 
+ 
+ }
