@@ -7,7 +7,7 @@
     
 }
 
-/* .button {
+ .button {
     width: 250px;
     height: 90px;
     border: none;
@@ -24,7 +24,29 @@
 .button i {
     margin-right: 10px;
     font-size: 10px;
-} */
+} 
+
+.logo {
+    margin-left: 40px;
+
+}
+
+
+.logo h1 {
+    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Jost", sans-serif;
+}
+
+:root {
+    --primary: #4294E3;
+    --secondary: #8F12FD;
+}
+
+
+
 
 .logo {
     margin-left: 40px;
@@ -37,8 +59,7 @@
     cursor: pointer;
     /* padding: 10px; */
     display: none;
-    position: relative;
-    left: 50%;
+    
 }
 
 .nav-toggle-label span {
@@ -60,15 +81,15 @@
 @media (max-width: 768px) {
     .nav-toggle-label {
         display: block; 
-        width: 100px;
+        margin-right: 1em;
     }
 
     #navbar ul {
         flex-direction: column;
         position: absolute;
-        top: 60px; 
-        left: 0;
-        width: 100%;
+        top: 60px;
+       right: 0;
+        width: 100vw;
         background-color: #ffffff96;
         padding: 10px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -109,6 +130,26 @@
     --secondary: #8F12FD;
 }
 
+/* Navbar Styles */
+
+/* Menu Toggle Button */
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+@media (max-width: 936px){
+    button.btn{
+        display: none;
+    }
+}
+
+
+
 .heading {
     display: flex;
     justify-content: space-between;
@@ -126,7 +167,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
 }
 
 #navbar ul li {
@@ -170,6 +211,7 @@
 
 
 
+
 /*-------------------------------------------------- / / HOME / /----------------------------------------------- */
 
 
@@ -193,7 +235,7 @@
 
 .cover {
     width: 70%;
-    padding: 50px;
+    padding: 86px;
     text-align: center;
     position: relative;
     top: 50px;
@@ -611,13 +653,17 @@ button {
     color: #0d6efd;
 }
 
+.tick p {
+    line-height: 3;
+}
+
 .button {
     background-color: #0d6efd; 
     color: #fff;
     border: none;
     padding: 12px 24px;
     border-radius: 6px;
-    font-size: 10px;
+    font-size: 8px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
